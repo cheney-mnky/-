@@ -1,0 +1,168 @@
+body,html {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: '微软雅黑';
+}
+
+.container {
+	max-width: 750px;
+	padding: 0;
+	margin: auto; 
+	/*position: relative;*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.top_bg {
+	max-width: 750px;
+	margin: auto;
+	z-index: -1;
+	position: absolute;
+	width: 100%;
+}
+
+.content {
+	margin-top: 11%;
+/*	display: flex;
+	flex-direction: column; */
+	width: 72%;
+	padding: 0.1rem;
+}
+
+.content>h1 {
+	margin-bottom: 0.1rem;
+	font-size: 0.36rem;
+}
+
+.content>p {
+	line-height: 0.4rem;
+	font-size: 0.23rem;
+	margin: 0;
+	margin-right: 0.1rem;
+}
+
+.text_a {
+	width: 70%;
+	height: 13%;
+	margin-left: 0;
+}
+
+.content2 {
+	width: 72%;
+	line-height: 0.4rem;
+	font-size: 0.23rem;
+}
+
+.content2>p {
+	margin: 0;
+}
+
+.down {
+	margin-top: 1.5rem;
+	width: 72%;
+}
+
+.share {
+	margin-top: 0.2rem;
+	width: 72%;
+}
+
+.bottom_img {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	width: 100%;
+}
+
+.bottom_img img {
+	position: absolute;
+	padding: 0;
+	margin: 0px;
+	width: 100%;
+	margin-top: -1.4rem;
+	z-index: -1;
+}
+
+.bottom_img .p1 {
+	position: absolute;
+	margin: 0.05rem;
+	margin-top: 0.15rem;
+	font-size: 0.23rem;
+	top: 0rem;
+}
+
+.bottom_img .p2 {
+	position: absolute;
+	font-size: 0.23rem;
+	top: 0.5rem;
+	margin-left: 0.53rem;
+	margin-top: 0.01rem;
+}
+
+.bottom_img .p3 {
+	position: absolute;
+	font-size: 0.1rem;
+	top: 0.7rem;
+	opacity: 0.5;
+}
+
+#shareHidden {
+	position: fixed;
+	z-index: 99;
+	height: 100%;
+	display: none;
+	background: black;
+	opacity: 0.8;
+}
+
+.llq_share {
+	margin: 0px;
+	width: 100%;
+	margin-top: 20%;
+}
+
+/* 介于 320-370 （348） */
+@media (max-width:375px) {
+	.wechat {
+		height: 10%;
+		width: 35%;
+		align-self: flex-start;
+		margin-left: 1.1rem;
+		margin-top: 0.1rem;
+		margin-bottom: 0;
+	}
+
+	.wechat>img {
+		height: 57%;
+		width: 57%;
+		margin-bottom: 0;
+	}
+
+	.wechat>p {
+		margin: 0;
+		font-size: 0.01rem;
+	}
+}
+
+@media (min-width:376px) {
+	.wechat {
+		height: 10%;
+		width: 35%;
+		align-self: flex-start;
+		margin-left: 1.1rem;
+		margin-top: 0.75rem;
+		margin-bottom: 0;
+	}
+
+	.wechat>img {
+		height: 47%;
+		width: 47%;
+	}
+
+	.wechat>p {
+		margin: 0;
+		font-size: 0.1rem;
+	}
+}
